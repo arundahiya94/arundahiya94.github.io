@@ -1,129 +1,62 @@
-<img width="1943" height="1093" alt="image" src="https://github.com/user-attachments/assets/cc2ff955-17c2-48c7-81c8-479a0f061850" />
+# Arun Kumar - AI Engineer Portfolio
 
-# DevPortfolio Template
+A modern, minimalist portfolio showcasing my experience in AI/ML engineering, data science, and software development. Built with Astro and Tailwind CSS.
 
-A modern, minimalist portfolio template built with Astro and Tailwind CSS. Perfect for developers looking to showcase their skills, experience, and projects in a clean, professional way.
+🔗 **Live Site**: [https://arundahiya94.github.io](https://arundahiya94.github.io)
 
-This was completely rebuilt from the ground up from V1. This template was built to be entirely ready to go with a quick config edit (see below) but also provides the ability to easily extend in whatever way you want.
+## About Me
 
-This template also comes with `CLAUDE.md` and `.cursor/rules` files for easy integration with your existing AI workflows.
+Data & AI Engineer with 7+ years of software engineering experience and an M.Sc. in Applied Data Science. I specialize in building end-to-end ML/AI pipelines, transformer-based NLP models, RAG systems, and production MLOps workflows.
 
-> **📬 Connect & Share!**  
-> For questions and updates, feel free to reach out on [**X (Twitter)**](https://x.com/rfitzio).  
-> If you've built and published your personal site with this template, I'd love to see it! Send me a DM 🚀
+Currently interning at **Mercedes-Benz**, working on multi-agent AI systems with Google Vertex AI and implementing production-ready RAG pipelines.
 
-## Preview
+## Tech Stack
 
-To view a live preview of the site, [click here](https://ryanfitzgerald.github.io/devportfolio/).
+**AI/ML**: Python, PyTorch, TensorFlow, HuggingFace Transformers, LangChain, RAG Pipelines, Vector Databases
 
-## Built With
+**Data Engineering**: GCP BigQuery, AWS, Airflow, dbt, Spark, Docker/Kubernetes
 
-- **[Astro](https://astro.build/)** - Static site generator for modern web apps
+**Development**: Flask, Git/GitHub, CI/CD, Jenkins, REST APIs
+
+## Featured Projects
+
+- **Mental Health Reddit Classifier** - Multi-label classification across 7 psychological dimensions using transformer architectures (82.1% accuracy)
+- **FER-2013 Emotion Recognition** - Knowledge distillation achieving 74.3% accuracy with model compression
+- **GenAI News Generator** - RAG-powered article generation with LangChain
+- **City Bike Share Analytics Pipeline** - Real-time data pipeline with BigQuery, dbt, and Airflow
+- **Candidate Predictor API** - ML deployment with Flask and Docker
+
+## Template Credits
+
+This portfolio is built using the excellent [DevPortfolio template](https://github.com/RyanFitzgerald/devportfolio) by Ryan Fitzgerald. The template provides a clean, professional foundation built with:
+
+- **[Astro](https://astro.build/)** - Static site generator
 - **[Tailwind CSS v4](https://tailwindcss.com/)** - Utility-first CSS framework
-- **[Tabler Icons](https://tabler.io/icons)** - Free and open source icons
-- **TypeScript** - For type-safe configuration
+- **[Tabler Icons](https://tabler.io/icons)** - Icon library
+- **TypeScript** - Type-safe configuration
 
-## Updating the Template
+## Local Development
 
-### Configuration
+To run this portfolio locally:
 
-The template is designed to be easily customizable through the `src/config.ts` file. This single file controls:
+```bash
+# Clone the repository
+git clone https://github.com/arundahiya94/arundahiya94.github.io.git
+cd arundahiya94.github.io
 
-- **Personal Information**: Name, title, description
-- **Accent Color**: Primary color theme (changing this will change the accent color site wide)
-- **Social Links**: Email, LinkedIn, Twitter, GitHub (all optional)
-- **About Section**: Personal bio/description
-- **Skills**: List of technical skills
-- **Projects**: Project showcase with descriptions and links
-- **Experience**: Work history with bullet points
-- **Education**: Educational background and achievements
+# Install dependencies
+npm install
 
-If skills, projects, experience, or education are removed from the config, those sections will be hidden entirely.
-
-### Example structures
-
-Here's what the config data structure looks like for each section:
-
-#### Basic Information
-```typescript
-name: "Your Name",
-title: "Your Job Title",
-description: "Brief site description",
-accentColor: "#1d4ed8", // Hex color for theme
+# Start development server
+npm run dev
 ```
 
-#### Social Links (all optional)
-```typescript
-social: {
-  email: "your-email@example.com",
-  linkedin: "https://linkedin.com/in/yourprofile",
-  twitter: "https://twitter.com/yourprofile", 
-  github: "https://github.com/yourusername",
-}
-```
-
-#### About Section
-```typescript
-aboutMe: "A paragraph describing yourself, your background, interests, and what you're passionate about. This appears in the About section of your portfolio."
-```
-
-#### Skills
-```typescript
-skills: ["JavaScript", "React", "Node.js", "Python", "AWS", "Docker"]
-```
-
-#### Projects
-```typescript
-projects: [
-  {
-    name: "Project Name",
-    description: "Brief description of what the project does and its impact",
-    link: "https://github.com/yourusername/project",
-    skills: ["React", "Node.js", "AWS"], // Technologies used
-  }
-]
-```
-
-#### Experience
-```typescript
-experience: [
-  {
-    company: "Company Name",
-    title: "Your Job Title",
-    dateRange: "Jan 2022 - Present",
-    bullets: [
-      "Led development of microservices architecture serving 1M+ users",
-      "Reduced API response times by 40% through optimization",
-      "Mentored team of 5 junior developers",
-    ],
-  }
-]
-```
-
-#### Education
-```typescript
-education: [
-  {
-    school: "University Name",
-    degree: "Bachelor of Science in Computer Science",
-    dateRange: "2014 - 2018",
-    achievements: [
-      "Graduated Magna Cum Laude with 3.8 GPA",
-      "Dean's List all semesters",
-      "President of Computer Science Club"
-    ]
-  }
-]
-```
-
-### Icons
-
-The template uses [Tabler Icons](https://tabler.io/icons) for all icons. If you wish to add more icons and have it look consistent with what's already there, you can browse through their extensive icon library.
+The site will be available at `http://localhost:4321`
 
 ## Project Structure
 
 ```
-devportfolio/
+arundahiya94.github.io/
 ├── public/
 │   └── favicon.svg          # Site favicon
 ├── src/
@@ -140,48 +73,79 @@ devportfolio/
 │   ├── styles/
 │   │   └── global.css       # Global styles
 │   └── config.ts            # Site configuration
+├── .github/
+│   └── workflows/
+│       └── deploy.yml       # GitHub Actions deployment
 ├── astro.config.mjs         # Astro configuration
 ├── package.json             # Project dependencies
-├── tailwind.config.js       # Tailwind configuration
-└── tsconfig.json            # TypeScript configuration
+└── tailwind.config.js       # Tailwind configuration
 ```
 
-## Local Development
+## Configuration
 
-If you'd like to run it locally:
+All portfolio content is managed through `src/config.ts`. Update this single file to customize:
 
-```
-git clone https://github.com/RyanFitzgerald/devportfolio.git
-cd devportfolio
-npm install
-```
+- Personal information (name, title, location)
+- Social links (email, GitHub, LinkedIn)
+- About section text
+- Skills list
+- Projects with descriptions and links
+- Work experience with bullet points
+- Education and achievements
 
-After that, start up the Astro dev server with:
+### Example Configuration Structure
 
-```
-npm run dev
+```typescript
+export const siteConfig = {
+  name: "Your Name",
+  title: "Your Job Title",
+  description: "Brief site description",
+  accentColor: "#1d4ed8", // Customize theme color
+  social: {
+    email: "your-email@example.com",
+    linkedin: "https://linkedin.com/in/yourprofile",
+    github: "https://github.com/yourusername",
+  },
+  aboutMe: "Your bio...",
+  skills: ["Skill 1", "Skill 2", "Skill 3"],
+  projects: [
+    {
+      name: "Project Name",
+      description: "Project description",
+      link: "https://github.com/yourusername/project",
+      skills: ["Tech1", "Tech2"]
+    }
+  ],
+  // ... experience, education sections
+};
 ```
 
 ## Deployment
 
-The template can be deployed to any static hosting service easily (and in most cases, completely free). Here are some options:
+This portfolio is automatically deployed to GitHub Pages via GitHub Actions. Any push to the `main` branch triggers a rebuild and deployment.
 
-- To deploy with Netlify, [click here](https://docs.astro.build/en/guides/deploy/netlify/).
-- To deploy with Vercel, [click here](https://docs.astro.build/en/guides/deploy/vercel/).
-- To deploy with GitHub Pages, [click here](https://docs.astro.build/en/guides/deploy/github/).
-- To deploy with Cloudflare Pages, [click here](https://docs.astro.build/en/guides/deploy/cloudflare/).
-- To deploy with Render, [click here](https://docs.astro.build/en/guides/deploy/render/).
+**Deployment workflow**: `.github/workflows/deploy.yml`
 
-Want to deploy somewhere else? Find more guides [here](https://docs.astro.build/en/guides/deploy/).
+The site is live at: **[https://arundahiya94.github.io](https://arundahiya94.github.io)**
 
-## Changelog
+### Alternative Deployment Options
 
-To view the changelog, see CHANGELOG.md.
+- [Netlify](https://docs.astro.build/en/guides/deploy/netlify/)
+- [Vercel](https://docs.astro.build/en/guides/deploy/vercel/)
+- [Cloudflare Pages](https://docs.astro.build/en/guides/deploy/cloudflare/)
+- [Render](https://docs.astro.build/en/guides/deploy/render/)
+
+## Connect With Me
+
+- 📧 Email: [dahiya.akd94@gmail.com](mailto:dahiya.akd94@gmail.com)
+- 💼 LinkedIn: [arun-kumar-94in](https://linkedin.com/in/arun-kumar-94in)
+- 🐙 GitHub: [arundahiya94](https://github.com/arundahiya94)
+- 📍 Location: Heidelberg, Germany
 
 ## License
 
-This project is fully and completely MIT. See LICENSE.md.
+This portfolio is based on the MIT-licensed [DevPortfolio template](https://github.com/RyanFitzgerald/devportfolio). All project content and customizations are © 2026 Arun Kumar.
 
-## Questions?
+---
 
-Feel free to reach out on [X (Twitter)](https://x.com/rfitzio) if you have any questions or need help.
+**Looking for AI/ML engineering opportunities in Germany and EMEA** 🚀
