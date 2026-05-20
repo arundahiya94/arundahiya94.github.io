@@ -1,17 +1,20 @@
 export const siteConfig = {
   name: "Arun Kumar",
   title: "AI Engineer | Data Scientist",
-  email: "dahiya.akd94@gmail.com",
-  github: "arundahiya94",
-  linkedin: "arun-kumar-94in",
-  location: "Heidelberg, Germany",
-  
-  about: `Data & AI Engineer with 7+ years of software engineering experience and an M.Sc. in Applied Data Science. I build end-to-end ML/AI pipelines on GCP and AWS — from transformer-based NLP classification to agentic AI systems with RAG and vector databases.
+  description: "Portfolio of Arun Kumar - AI Engineer specializing in NLP, RAG pipelines, and MLOps",
+  accentColor: "#1d4ed8",
+  social: {
+    email: "dahiya.akd94@gmail.com",
+    linkedin: "https://linkedin.com/in/arun-kumar-94in",
+    twitter: "",
+    github: "https://github.com/arundahiya94",
+  },
+  aboutMe: `Data & AI Engineer with 7+ years of software engineering experience and an M.Sc. in Applied Data Science. I build end-to-end ML/AI pipelines on GCP and AWS — from transformer-based NLP classification to agentic AI systems with RAG and vector databases.
 
 Currently interning at Mercedes-Benz, where I architect multi-agent AI workflows using Google Vertex AI and implement production-ready RAG pipelines. Previously led microservices development and CI/CD automation at Iris Software Solutions, reducing deployment time by 20%.
 
 I specialize in NLP, transformer models (BERT, RoBERTa, DeBERTa), and MLOps. My recent work includes classifying mental health discourse on Reddit with 82% accuracy and building real-time data pipelines for bike-share analytics.`,
-
+  
   skills: [
     "Python",
     "PyTorch",
@@ -54,7 +57,7 @@ I specialize in NLP, transformer models (BERT, RoBERTa, DeBERTa), and MLOps. My 
     {
       name: "City Bike Share Analytics Pipeline",
       description: "Built near-real-time data pipeline with BigQuery (2-min refresh), curated dbt models, and Airflow orchestration. Delivered operational dashboards surfacing rider demand and station utilization KPIs, reducing station idle time by 15% through data quality checks.",
-      link: "https://github.com/arundahiya94", // Update when repo is public
+      link: "https://github.com/arundahiya94",
       skills: ["GCP BigQuery", "dbt", "Airflow", "Data Engineering", "Analytics"]
     },
     {
@@ -112,7 +115,10 @@ I specialize in NLP, transformer models (BERT, RoBERTa, DeBERTa), and MLOps. My 
       school: "DCRUST Murthal, Haryana",
       degree: "B.E. Computer Science Engineering",
       dateRange: "Jul 2012 - Jun 2016",
-      achievements: []
+      achievements: [
+        "Strong foundation in computer science fundamentals",
+        "Focus on software engineering and system design"
+      ]
     }
-  ]
+  ],
 };
